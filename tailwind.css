@@ -1,0 +1,139 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --background-white: rgba(255, 255, 255, 1);
+  --body-3-regular-font-family: "Nunito Sans", Helvetica;
+  --body-3-regular-font-size: 14px;
+  --body-3-regular-font-style: normal;
+  --body-3-regular-font-weight: 400;
+  --body-3-regular-letter-spacing: 0px;
+  --body-3-regular-line-height: normal;
+  --bold-24-font-family: "Inter", Helvetica;
+  --bold-24-font-size: 24px;
+  --bold-24-font-style: normal;
+  --bold-24-font-weight: 700;
+  --bold-24-letter-spacing: 0px;
+  --bold-24-line-height: normal;
+  --button-bold-font-family: "Nunito Sans", Helvetica;
+  --button-bold-font-size: 14px;
+  --button-bold-font-style: normal;
+  --button-bold-font-weight: 700;
+  --button-bold-letter-spacing: 0px;
+  --button-bold-line-height: normal;
+  --dark-500: rgba(22, 21, 28, 1);
+  --greysgray-500: rgba(147, 145, 133, 1);
+  --greysgray-900: rgba(47, 54, 69, 1);
+  --m3-label-medium-font-family: "Roboto", Helvetica;
+  --m3-label-medium-font-size: 12px;
+  --m3-label-medium-font-style: normal;
+  --m3-label-medium-font-weight: 500;
+  --m3-label-medium-letter-spacing: 0.5px;
+  --m3-label-medium-line-height: 16px;
+  --monochromeblack: rgba(29, 33, 41, 1);
+  --monochromedark-gray: rgba(42, 48, 60, 1);
+  --monochromegray-100: rgba(248, 250, 252, 1);
+  --monochromegray-200: rgba(221, 221, 221, 1);
+  --monochromegray-500: rgba(217, 234, 253, 1);
+  --monochromegray-800: rgba(154, 166, 178, 1);
+  --monochromeplain-white: rgba(255, 255, 255, 1);
+  --monochromewhite: rgba(241, 239, 236, 1);
+  --regular-10-font-family: "Inter", Helvetica;
+  --regular-10-font-size: 10px;
+  --regular-10-font-style: normal;
+  --regular-10-font-weight: 300;
+  --regular-10-letter-spacing: 0px;
+  --regular-10-line-height: normal;
+  --text-2-dark-gray: rgba(145, 146, 146, 1);
+  --text-3-gray: rgba(187, 188, 191, 1);
+  --white-500: rgba(255, 255, 255, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
