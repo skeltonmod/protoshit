@@ -10,17 +10,17 @@
   
   let { onNext, onBack, onSkip }: Props = $props();
   
-  let firstName = '';
-  let middleName = '';
-  let lastName = '';
-  let suffix = '';
-  let dateOfBirth = '';
-  let gender = '';
-  let civilStatus = '';
-  let tin = '';
-  let nationality = '';
-  let religion = '';
-  let placeOfBirth = '';
+  let firstName = $state('');
+  let middleName = $state('');
+  let lastName = $state('');
+  let suffix = $state('');
+  let dateOfBirth = $state('');
+  let gender = $state('');
+  let civilStatus = $state('');
+  let tin = $state('');
+  let nationality = $state('');
+  let religion = $state('');
+  let placeOfBirth = $state('');
 
   function handleSkip() {
     onSkip?.() || console.log('Skip step');

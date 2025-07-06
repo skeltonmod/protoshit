@@ -1,8 +1,8 @@
 <script lang="ts">
-  import LoginSection from "$lib/components/LoginSection.svelte";
-  import AccountSetupSection from "$lib/components/AccountSetupSection.svelte";
-  import PersonalInformationSection from "$lib/components/PersonalInformationSection.svelte";
-  import ContactInformationSection from "$lib/components/ContactInformationSection.svelte";
+  import LoginSection from "$lib/screens/LoginSection.svelte";
+  import AccountSetupSection from "$lib/screens/AccountSetupSection.svelte";
+  import PersonalInformationSection from "$lib/screens/PersonalInformationSection.svelte";
+  import ContactInformationSection from "$lib/screens/ContactInformationSection.svelte";
 
   let currentStep = $state(1);
 
